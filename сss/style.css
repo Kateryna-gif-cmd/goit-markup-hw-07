@@ -294,11 +294,11 @@ address {
 }
   
 
-.next-list .next-list-item {
+.next-list .next-item {
   width: 270px;
   
 }
-.next-list .next-text-title {
+.next-list .next-description {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16/14);
@@ -310,7 +310,7 @@ address {
   
   
 }
-.next-paragraph-title {
+.next-paragraph {
   font-size: 14px;
   line-height:calc(24/14);
   letter-spacing:0.03em;
@@ -398,13 +398,13 @@ address {
       transform: translateY(0);
     }/*
 /*About styles*/
-.about {
+.team {
   background: var(--section-color--);
   padding-bottom: 94px;
   
 }
 
-.about-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42/36);
@@ -413,13 +413,13 @@ address {
   color: var(--main-color);
   margin-bottom: 50px;
   }
-.about-list {
+.team-list {
    
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
   }
-  .about-list .social-icons {
+  .team-list .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 16px;
@@ -428,7 +428,7 @@ address {
   
   
 
-  .about-list .social-item {
+  .team-list .social-item {
     width: 44px;
     height: 44px;
     background-color: var(--body-color--);
@@ -438,12 +438,12 @@ address {
     border-radius: 50%;
   }
 
-  .about-list .social-link:hover,
-  .about-list .social-link:focus {
+  .team-list .social-link:hover,
+  .team-list .social-link:focus {
     background-color: var(--accent-color);
     color: var(--button-first-color);
   }
-  .about-list .social-link{
+  .team-list .social-link{
     width: 100%;
     height: 100%;
     display: flex;
@@ -454,7 +454,7 @@ address {
     color: var(--icon-color--);
     
   }
-  .about-list .social-item:last-child {
+  .team-list .social-item:last-child {
     margin-right: 0;
   }
 
@@ -468,11 +468,11 @@ address {
   fill: #ffff;
   }
   
-  .about-container {
+  .team-container {
     padding: 30px 10px 30px 10px;
     text-align: center;
   }
-  .about-list-item {
+  .team-item {
     
     
     min-width: 270px;
@@ -483,11 +483,11 @@ address {
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .about-photo-img {
+  .about-photo {
   
   }
   
-.about-after-title {
+.team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19/16);
@@ -496,7 +496,7 @@ address {
   margin-bottom: 10px;
   
 }
-.about-text {
+.team-profession {
   font-size: 16px;
   line-height: calc(19/16);
   letter-spacing: 0.03em;
