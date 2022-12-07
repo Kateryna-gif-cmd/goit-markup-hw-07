@@ -325,8 +325,6 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-list .header-link .current:visited {
