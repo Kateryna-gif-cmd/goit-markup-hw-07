@@ -1108,16 +1108,7 @@ address {
   text-decoration: none;
   border-radius: 4px;
 }
-
-.galery-card:hover .galery-description {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.galery-card:focus .galery-description {
+.galery-card:hover, .galery-card:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -1139,15 +1130,14 @@ address {
 .galery-item {
   display: block;
 }
-
-.galery-item:hover .galery-description {
+.galery-item:hover, .galery-item:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.galery-item:focus .galery-description {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galery-wrapper {
@@ -1174,14 +1164,12 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.galery-item:hover,
-.galery-item:focus {
-  border-radius: 4px;
+.galery-description:hover, .galery-description:focus {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text {
