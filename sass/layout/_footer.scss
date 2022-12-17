@@ -8,11 +8,15 @@
     background-color: #2F303A;
     &__contacts {
       @media screen and (max-width: 768px) {
-      margin-left: 124px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
       
       }
+      @media screen and (min-width: 1200px) {
         margin-right: 70px;
       }
+    }
       &__logo {
         font-family: 'Raleway';
     font-style: normal;
@@ -31,6 +35,10 @@
         
       }
       &__link {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 12px;
+        }
+        
         font-style: normal;
         font-size: 14px;
         line-height: calc(24/14);
@@ -58,6 +66,9 @@
         justify-content: center;
       }
       &__link-mail {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 12px;
+        }
         font-style: normal;
         font-size: 14px;
         line-height: calc(24/14);
@@ -91,8 +102,8 @@
       &__social {
         @media screen and (max-width: 768px) {
           display: flex;
-          
           flex-direction: column;
+           align-items: center;
           margin-top: 60px;
         }
         @media screen and (min-width: 1200px) {
