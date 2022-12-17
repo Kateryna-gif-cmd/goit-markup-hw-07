@@ -20,7 +20,10 @@
       
       }
       @media screen and (min-width: 1200px) {
-        margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 94px;
       }
     }
       &__logo {
@@ -143,7 +146,8 @@
         @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: column;
-        margin-right: 73px;
+        align-items: flex-start;;
+        margin-right: 93px;
         }
       }
       &__social-title {
@@ -188,11 +192,12 @@
     fill: currentColor;
     }
     &__fedback {
+
  
         display: flex;
         flex-direction: column;
         
-        margin-right: auto;
+        margin-right: 0 auto;
 
     }
     &__fedback-wrapper {
@@ -206,11 +211,24 @@
         
         margin-top: 60px;
       }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-start;
+      }
     }
     &__text {
       @media screen and (max-width: 768px) {
       
         justify-content: space-around;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        font-weight: 700;
+        line-height: calc(16/14);
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px; 
       }
         display: flex;
         font-weight: 700;
@@ -230,6 +248,10 @@
         width: 450px;
         margin-bottom: 20px;
       }
+      @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin: 0 auto;
+      }
       
         width: 358px;
         height: 50px;
@@ -248,7 +270,7 @@
         &:hover,
         &:focus {
           border: 1px solid var(--accent-color);
-    }
+        }
 }
     &__btn {
       @media screen and (max-width: 768px) {
@@ -286,13 +308,14 @@
 
       @media screen and (min-width: 768px) {
         display: flex;
-        flex-direction: column;
+       flex-direction: column;
         align-items: center;
       }
 
 
         @media screen and (min-width: 1200px) {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 12px;

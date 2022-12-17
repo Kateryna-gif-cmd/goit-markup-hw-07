@@ -1,4 +1,8 @@
 .work {
+@media screen and (max-width: 1200px) {
+    display: none;
+    
+}
     background-color: var(--body-color--);
     padding-bottom: 94px;
     &__title {

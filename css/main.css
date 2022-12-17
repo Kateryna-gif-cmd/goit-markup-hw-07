@@ -535,6 +535,11 @@ address {
   background-color: var(--body-color--);
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
 .work__title {
   font-size: 36px;
   line-height: 1.1666666667;
@@ -792,7 +797,17 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
-    margin-right: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 94px;
   }
 }
 .footer__logo {
@@ -952,7 +967,10 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 73px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 93px;
   }
 }
 .footer__social-title {
@@ -1009,7 +1027,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: auto;
+  margin-right: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .footer__fedback-wrapper {
@@ -1031,6 +1049,16 @@ address {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__fedback-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .footer__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,6 +1074,19 @@ address {
   .footer__text {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    line-height: 1.1428571429;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
   }
 }
 .footer__input {
@@ -1074,6 +1115,12 @@ address {
   .footer__input {
     width: 450px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+    margin: 0 auto;
   }
 }
 .footer__input:hover, .footer__input:focus {
@@ -1142,6 +1189,10 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1489,19 +1540,59 @@ address {
   background-color: #188ce8;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
-.portfolio__list {
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+  }
 }
 .portfolio__button {
   color: #212121;
