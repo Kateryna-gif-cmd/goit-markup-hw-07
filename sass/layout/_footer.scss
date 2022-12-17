@@ -195,6 +195,14 @@
       }
 }
   .footer .container {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     display: flex;
     align-items: baseline;
   }
