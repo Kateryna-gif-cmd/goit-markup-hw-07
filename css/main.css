@@ -756,8 +756,19 @@ address {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .footer__contacts {
   margin-right: 70px;
+}
+@media screen and (max-width: 768px) {
+  .footer__contacts {
+    margin-left: 124px;
+  }
 }
 .footer__logo {
   font-family: "Raleway";
@@ -833,15 +844,29 @@ address {
   color: var(--accent-color);
   text-decoration: none;
 }
-.footer__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 73px;
+@media screen and (max-width: 768px) {
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 73px;
+  }
 }
 .footer__social-title {
   display: -webkit-box;
@@ -899,6 +924,16 @@ address {
           flex-direction: column;
   margin-right: auto;
 }
+@media screen and (max-width: 768px) {
+  .footer__fedback-wrapper {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__fedback-wrapper {
+    margin-top: 60px;
+  }
+}
 .footer__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -909,6 +944,12 @@ address {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__text {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 .footer__input {
   width: 358px;
@@ -925,6 +966,18 @@ address {
   background-color: rgb(47, 48, 58);
   padding-left: 16px;
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .footer__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 .footer__input:hover, .footer__input:focus {
   border: 1px solid var(--accent-color);
@@ -954,18 +1007,15 @@ address {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 12px;
-  position: relative;
+@media screen and (max-width: 768px) {
+  .footer__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .footer__form {
@@ -973,6 +1023,24 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 12px;
+    position: relative;
   }
 }
 .footer__form-icon {
@@ -994,8 +1062,13 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1005,6 +1078,9 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

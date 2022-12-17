@@ -1,8 +1,16 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
     background-color: #2F303A;
     &__contacts {
+      @media screen and (max-width: 768px) {
+      margin-left: 124px;
+      
+      }
         margin-right: 70px;
       }
       &__logo {
@@ -37,6 +45,7 @@
             color: var(--accent-color);
     text-decoration: none;    
         }
+    
       }
       &__icons {
         margin-top: 9px;
@@ -80,9 +89,17 @@
         }
       }
       &__social {
+        @media screen and (max-width: 768px) {
+          display: flex;
+          
+          flex-direction: column;
+          margin-top: 60px;
+        }
+        @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: column;
         margin-right: 73px;
+        }
       }
       &__social-title {
         display: flex;
@@ -131,7 +148,19 @@
         margin-right: auto;
 
     }
+    &__fedback-wrapper {
+      @media screen and (max-width: 768px) {
+      margin-top: 60px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-top: 60px;
+      }
+    }
     &__text {
+      @media screen and (max-width: 768px) {
+      
+        justify-content: space-around;
+      }
         display: flex;
         font-weight: 700;
         line-height: calc(16/14);
@@ -141,6 +170,16 @@
         margin-bottom: 20px; 
     }
     &__input {
+      @media screen and (max-width: 768px) {
+        width: 450px;
+
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-bottom: 20px;
+      }
+      
         width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -161,6 +200,11 @@
     }
 }
     &__btn {
+      @media screen and (max-width: 768px) {
+       display: flex;
+     
+       align-items: center;
+      }
         font-family: inherit;
         font-weight: 700;
         font-size: 16px;
@@ -184,13 +228,17 @@
       &__form {
         @media screen and (max-width: 768px) {
           flex-direction: column;
+          align-items: center;
+          
         }
 
+        @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
         position: relative;
+        }
       }
       &__form-icon {
         position: absolute;
@@ -201,11 +249,15 @@
   .footer .container {
     @media screen and (max-width: 768px) {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      // flex-wrap: wrap;
+      // justify-content: space-around;
     }
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     display: flex;
     align-items: baseline;
