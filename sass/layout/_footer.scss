@@ -13,6 +13,12 @@
         align-items: center;
       
       }
+      @media screen and (min-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      
+      }
       @media screen and (min-width: 1200px) {
         margin-right: 70px;
       }
@@ -32,7 +38,26 @@
       }
       &__address {
         margin-top: 20px;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          margin-bottom: 12px;
+        }
+        margin-top: 20px;
+   
         
+      }
+      &__item {
+        @media screen and (max-width: 768px) {
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        @media screen and (min-width: 768px) {
+          margin-bottom: 12px;
+        }
       }
       &__link {
         @media screen and (max-width: 768px) {
@@ -69,6 +94,10 @@
         @media screen and (max-width: 768px) {
           margin-bottom: 12px;
         }
+        @media screen and (min-width: 768px) {
+          margin-bottom: 12px;
+        }
+
         font-style: normal;
         font-size: 14px;
         line-height: calc(24/14);
@@ -105,6 +134,11 @@
           flex-direction: column;
            align-items: center;
           margin-top: 60px;
+        }
+        @media screen and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         @media screen and (min-width: 1200px) {
         display: flex;
@@ -154,8 +188,10 @@
     fill: currentColor;
     }
     &__fedback {
+ 
         display: flex;
         flex-direction: column;
+        
         margin-right: auto;
 
     }
@@ -164,6 +200,10 @@
       margin-top: 60px;
       }
       @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
         margin-top: 60px;
       }
     }
@@ -211,7 +251,10 @@
     }
 }
     &__btn {
-   
+      @media screen and (max-width: 768px) {
+        margin: 0 auto;
+      }
+      
       
         font-family: inherit;
         font-weight: 700;
@@ -237,8 +280,16 @@
         @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        align-items: center;
           
         }
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
 
         @media screen and (min-width: 1200px) {
         display: flex;
@@ -265,7 +316,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     @media screen and (min-width: 1200px) {
     display: flex;
