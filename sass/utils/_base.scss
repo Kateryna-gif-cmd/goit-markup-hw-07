@@ -48,8 +48,10 @@ body {
         width: 480px;
     }
 
-    @media screen and (min-width:768px) {
-        width: 768px;
+    @media screen and (min-width:780px) {
+        width: 780px;
+       
+
 
     }
 
@@ -60,8 +62,19 @@ body {
 }
 
   .section {
-    padding-top: 94px;
     
+    
+      @media screen and (max-width: 768px) {
+        padding-top: 60px;
+      }
+      @media screen and (min-width: 768px) {
+        padding-top: 60px;
+      
+      }
+      @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+      }
+      padding-top: 94px;
   }
   .link {
     text-decoration: none;
